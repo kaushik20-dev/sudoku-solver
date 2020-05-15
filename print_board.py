@@ -11,6 +11,7 @@ class PrintBoard:
         params: 
         grid - numpy array of (9,9)
         """
+
         if not self.__is_valid_grid(grid):
             raise ValueError("input grid is not valid")
 
@@ -28,9 +29,10 @@ class PrintBoard:
 
         params: 
         grid - numpy array of (9,9)
-        
+
         return: Boolean value
         """
+        
         if grid.shape == (9,9):
             return True
         return False
